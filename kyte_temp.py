@@ -159,7 +159,7 @@ while True:
 #	magamistoa temperatuuri seadistus
 	if temperature10 < temperature_matuba:
 		GPIO.output(m_tuba, GPIO.LOW)
-	elif temperature8 < 26:
+	elif temperature8 < 25:
 		GPIO.output(m_tuba, GPIO.LOW)
 	else:
 		GPIO.output(m_tuba, GPIO.HIGH)
@@ -173,7 +173,7 @@ while True:
 #	Elutoa temperatuuri seadistus
         if temperature_tuba < temperature_etuba:
                 GPIO.output(s_tuba, GPIO.LOW)
-        elif temperature4 < 28:
+        elif temperature4 < 26:
 		GPIO.output(s_tuba, GPIO.LOW)
 	else:
                 GPIO.output(s_tuba, GPIO.HIGH)
@@ -195,3 +195,4 @@ while True:
 	print time.ctime(),"Andmed saadetud, ootan 60 sekundit..."
 	print "" 
  	time.sleep(60)
+
